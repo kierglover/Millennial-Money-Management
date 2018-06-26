@@ -1,22 +1,38 @@
 <template lang="html">
-              <div id="product-cards">
+              <div id="ad-card">
                    <p>{{category}}</p>
                    <h3>{{name}}</h3>
-                   <span class="card-subtitle">Summary</span>
+                   <p id="ad-subtitle">Summary</p>
                    <p>{{summary}}</p>
-                    <span class="card-subtitle">Cost</span>
+                    <span id="ad-subtitle">Cost</span>
                    <p>{{cost}}</p>
-                   <span class="card-subtitle">Considerations</span>
+                   <span id="ad-subtitle">What you get</span>
                    <p>{{considerations}}</p>
                    <!-- <p>Rating:{{rating}}</p> -->
-                   <a class="button" v-bind:href="productLink" target="_blank">Take a Look</a>
+                   <a class="button" @click="showModal = true">Get Started</a>
+                   <payment-modal v-if="showModal" @close="showModal = false">
+                       <!--
+                         you can use custom content here to overwrite
+                         default content
+                       -->
+                       <!-- <h3 slot="header">custom header</h3> -->
+                  </payment-modal>
               </div>
 </template>
 
 <script>
+import Modal from './Modal.vue'
 export default {
-     name: 'card',
+     name: 'AdCard',
+     components: {
+          'payment-modal': Modal,
+    },
      props: ['category', 'name', 'summary', 'cost', 'considerations', 'rating', 'productLink'],
+     data() {
+        return {
+             showModal: false
+        }
+   }
 }
 </script>
 
@@ -29,14 +45,14 @@ export default {
 }
 
 /* CARD STYLES */
-.card-subtitle {
+#ad-subtitle {
      font-size: 12px;
      text-transform: uppercase;
      opacity: 0.5;
      padding: 0px;
 }
 
-#product-cards {
+#ad-card {
      flex: 0 0 auto;
      margin: 20px;
      padding: 30px;
@@ -45,6 +61,10 @@ export default {
      border-radius: 5px;
      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
      border: 1px solid rgba(0, 0, 0, 0.2);
+     background: #FFAFBD;
+     background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
+     background: linear-gradient(to right, #ffc3a0, #FFAFBD);
+     border: 0px; color: white;
 }
 
 .button {

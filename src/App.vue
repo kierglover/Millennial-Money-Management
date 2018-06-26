@@ -4,7 +4,7 @@
        <!-- HEADING SECTION -->
       <section  class="heading-text">
           <h1>💰 Millennial Money Management</h1>
-          <p>A list of websites and apps to help you better manage money - without the banks</p>
+          <p>A directory of websites and apps to help you better manage money - without the banks!</p>
       </section>
 
       <!-- BANKING -->
@@ -12,7 +12,7 @@
            <product-card category="🏦 Banking" name="Revolut" summary="Current account, savings account, crypto investment, money transfer" cost="Free (premium account available)" considerations="Only EEA Residents for now" rating="API data" productLink="https://www.revolut.com"></product-card>
            <product-card category="🏦 Banking" name="Monzo" summary="Current account, savings account, money transfer, money mangement" cost="Free (dependant on use)" considerations="UK only" rating="API data" productLink="https://monzo.com"></product-card>
            <!-- SPONSORED CARD -->
-           <product-card category="👉 Sponsored" name="Advertise with me" summary="Got your own app or website? Get seen by the right people." cost="$30/mo" considerations="Front page gradient card" productLink="#" style="background: #FFAFBD; background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD); background: linear-gradient(to right, #ffc3a0, #FFAFBD); border: 0px; color: white;"></product-card>
+           <ad-card category="👉 Sponsored" name="Advertise with me" summary="Got your own app or website? Get seen by the right people." cost="$30/mo" considerations="Front page gradient card"></ad-card>
       </div>
       <!-- AUTO SAVING -->
       <div class="container">
@@ -53,12 +53,14 @@
 <script>
 import Header from './components/Header.vue'
 import Card from './components/Card.vue'
+import AdCard from './components/AdCard.vue'
 import Footer from './components/Footer.vue'
 export default {
-  // name: 'app'
+name: 'app',
   components: {
        'app-header': Header,
        'product-card': Card,
+       'ad-card': AdCard,
        'app-footer': Footer,
  },
   data () {
@@ -69,7 +71,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import './static/css/sakura.css';
+@import './static/css/global.css';
 
 ::-webkit-scrollbar scrollbar {
  display: none;
