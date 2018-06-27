@@ -22,6 +22,7 @@
                          <div class="actions">
                               <input class="special" type="submit" value="Send in suggestions">
                          </div>
+                         <input type="hidden" name="_next" value="https://millennialmoneymanagement.xyz" />
                     </form>
                </section>
                <section class="bottom-footer">
