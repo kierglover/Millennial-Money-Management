@@ -9,13 +9,14 @@
 
       <!-- BANKING -->
       <div class="container">
+          <gradient-card category="🏦 Banking" name="Starling Bank" summary="Current & savings accounts, international bank transfer + marketplace for other applications all in the form of a mobile only bank" cost="Free (dependant on use)" considerations="UK only" rating="API data" productLink="https://www.starlingbank.com/" id="purple-gradeint"></gradient-card>
            <product-card category="🏦 Banking" name="Revolut" summary="Current account, savings account, crypto investment, money transfer" cost="Free (premium account available)" considerations="Only EEA Residents for now" rating="API data" productLink="https://www.revolut.com"></product-card>
            <product-card category="🏦 Banking" name="Monzo" summary="Current account, savings account, money transfer, money mangement" cost="Free (dependant on use)" considerations="UK only" rating="API data" productLink="https://monzo.com"></product-card>
-           <!-- SPONSORED CARD -->
-           <ad-card category="👉 Sponsored" name="Advertise with me" summary="Got your own app or website? Get seen by the right people." cost="$30/mo" considerations="Front page gradient card"></ad-card>
+          <ad-card category="👉 Sponsored" name="Advertise with me" summary="Got your own app or website? Get seen by the right people." cost="$30/mo" considerations="Front page gradient card"></ad-card>
       </div>
       <!-- AUTO SAVING -->
       <div class="container">
+          <gradient-card category="🤖 Auto Saving / Travel" name="Tripcents" summary="An automated savings app with built in travel efficiencies to help millions of users travel more, debt free." cost="Free" considerations="Currently IOS only" rating="number from API here" productLink="http://www.tripcents.co/" id="orange-gradient"></gradient-card>
            <product-card category="🤖 Auto Saving / Investment" name="M1 Finance" summary="Automated investment platform" cost="Free" considerations="US only" rating="number from API here" productLink="https://www.m1finance.com"></product-card>
            <product-card category="🤖 Auto Saving / Investment" name="Coinbase" summary="Crypto currency trading" cost="Fees between 1.5% and 4% depending on country and payment method" considerations="Some coutnries not supported" rating="number from API here" productLink="https://www.coinbase.com/join/59db581c9cbfd0012b75883d"></product-card>
            <product-card category="🤖 Auto Saving / Investment" name="Acorns" summary="Automated investment platform" cost="Different monthly plans ($1, $2 or $3)" considerations="US only" rating="number from API here" productLink="https://www.acorns.com"></product-card>
@@ -25,6 +26,8 @@
       <!-- TRADING -->
       <div class="container">
            <product-card category="📈 Trading" name="Robinhood" summary="Free stock trading platform" cost="Free" considerations="US only" rating="number from API here" productLink="https://robinhood.com"></product-card>
+           <!-- SPONSORED CARD -->
+           <ad-card category="👉 Sponsored" name="Advertise with me" summary="Got your own app or website? Get seen by the right people." cost="$30/mo" considerations="Front page gradient card"></ad-card>
            <product-card category="📈 Trading" name="Degiro" summary="Dutch discount brokerage platform" cost="Low-fees (i.e 1$ for $2000 trade)" considerations="UK listed stockbroker, slow to process payment" rating="number from API here" productLink="https://www.degiro.ie"></product-card>
            <product-card category="📈 Trading" name="Freetrade" summary="Free stock trading platform" cost="Free / some payment for additional services" considerations="Not publically launched yet" rating="number from API here" productLink="https://freetrade.io/?kid=PJVA9"></product-card>
            <product-card category="📈 Trading" name="eToro" summary="Social trading platform" cost="Percentage of each trade you make" considerations="Slow setup" rating="number from API here" productLink="https://www.etoro.com/login"></product-card>
@@ -53,6 +56,7 @@
 <script>
 import Header from './components/Header.vue'
 import Card from './components/Card.vue'
+import GradientCard from './components/GradientCard.vue'
 import AdCard from './components/AdCard.vue'
 import Footer from './components/Footer.vue'
 export default {
@@ -60,6 +64,7 @@ name: 'app',
   components: {
        'app-header': Header,
        'product-card': Card,
+       'gradient-card': GradientCard,
        'ad-card': AdCard,
        'app-footer': Footer,
  },
@@ -76,6 +81,34 @@ name: 'app',
 
 ::-webkit-scrollbar scrollbar {
  display: none;
+}
+
+@mixin card-styles {
+     flex: 0 0 auto;
+     margin: 20px;
+     padding: 30px;
+     width: 30%;
+     height: 55vh;
+     border-radius: 5px;
+     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+     border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#orange-gradient {
+     @include card-styles;
+     background: #FF8008;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     border: none;
+     color: white;
+}
+
+#purple-gradeint {
+     @include card-styles;
+     background: #5f2c82; background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);
+     background: linear-gradient(to right, #49a09d, #5f2c82);
+     border: none;
+     color: white;
 }
 
 .container {
