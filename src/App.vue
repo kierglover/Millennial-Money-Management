@@ -35,6 +35,7 @@
 
       <!-- Cryptocurreny -->
       <div class="container">
+          <gradient-card category="🤖 Auto Saving / Travel" name="Crumbs" summary="Rounds up your transaction and puts the spare-change into a crypto-asset of your choice." cost="$2 a month, $0.15 on deposits + 1% of the transaction amount + $0.25 for withdrawals" considerations="US based + currently early access" rating="number from API here" productLink="https://crumbsapp.io/" id="meridian-gradient"></gradient-card>
            <product-card category="💸 Cryptocurreny" name="Robinhood Crypto" summary="Invest in cryptocurrencies 24/7 commission-free" cost="Free" considerations="US only" rating="number from API here" productLink="https://crypto.robinhood.com"></product-card>
            <product-card category="💸 Cryptocurreny" name="Crumbs" summary="Automated crypto investment platform" cost="$2.00 p/m and 1% +$0.15 deposit and withdrawel fee" considerations="US only" rating="number from API here" productLink="https://crumbsapp.io"></product-card>
       </div>
@@ -108,6 +109,14 @@ name: 'app',
      background: #5f2c82; background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);
      background: linear-gradient(to right, #49a09d, #5f2c82);
      border: none;
+     color: white;
+}
+
+#meridian-gradient {
+     background: #283c86;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     @include card-styles;
      color: white;
 }
 
