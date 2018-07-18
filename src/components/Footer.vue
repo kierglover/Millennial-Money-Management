@@ -20,7 +20,7 @@
                               <textarea name="comments" id="comments" placeholder="Comments" rows="1" style="overflow: hidden; resize: none; height: 59px;"></textarea>
                          </div>
                          <div class="actions">
-                              <input class="special" type="submit" value="Send in suggestions">
+                              <input class="special" type="submit" value="Send suggestions">
                          </div>
                          <input type="hidden" name="_next" value="https://millennialmoneymanagement.xyz" />
                     </form>
@@ -37,12 +37,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* SCSS */
-@mixin button-gradient {
-     background: #36D1DC;  /* fallback for old browsers */
-     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+/* VARIABLES */
+$millennial-blue: #4C84FF;
 
 //FOOTER//
 @mixin input-field-styling {
@@ -53,7 +49,7 @@ export default {
 
 #footer {
 text-align: center;
-background-color: #f6f6f6;
+background-color: #fff;
 max-width: 100%!important;
 padding: 50px;
 }
@@ -78,7 +74,7 @@ padding: 50px;
      text-transform: uppercase;
      font-size: 1em;
      width: 50%;
-     @include button-gradient;
+     background: $millennial-blue;
      color: white;
      border: none;
 }

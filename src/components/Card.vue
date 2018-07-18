@@ -1,5 +1,5 @@
 <template lang="html">
-              <div id="product-cards">
+          <a id="product-cards" v-bind:href="productLink" target="_blank">
                    <p>{{category}}</p>
                    <h3>{{name}}</h3>
                    <span class="card-subtitle">Summary</span>
@@ -9,8 +9,8 @@
                    <span class="card-subtitle">Considerations</span>
                    <p>{{considerations}}</p>
                    <!-- <p>Rating:{{rating}}</p> -->
-                   <a class="button" v-bind:href="productLink" target="_blank">Take a Look</a>
-              </div>
+                   <!-- <a class="button" v-bind:href="productLink" target="_blank">Take a Look</a> -->
+          </a>
 </template>
 
 <script>
@@ -37,14 +37,22 @@ export default {
 }
 
 #product-cards {
+     background: #fff;
      flex: 0 0 auto;
      margin: 20px;
      padding: 30px;
      width: 30%;
-     height: 55vh;
-     border-radius: 5px;
-     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-     border: 1px solid rgba(0, 0, 0, 0.2);
+     height: 50vh;
+     box-shadow: 0 3px 30px rgba(0,0,0,.05);
+     border: 0.75px solid rgba(0, 0, 0, 0.1);;
+     color: #28314A;
+     transition: all 250ms cubic-bezier(.02,.01,.47,1);
+}
+
+#product-cards:hover {
+      box-shadow: 0 10px 30px 5px #dde0ea;
+      transform: translate(0,-5px);
+      transition-delay: 0s!important;
 }
 
 .button {

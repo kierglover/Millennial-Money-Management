@@ -1,5 +1,5 @@
 <template lang="html">
-              <div id="ad-card">
+              <a id="ad-card" v-bind:href="productLink" target="_blank">
                    <p>{{category}}</p>
                    <h3>{{name}}</h3>
                    <p id="ad-subtitle">Summary</p>
@@ -9,8 +9,8 @@
                    <span id="ad-subtitle">What you get</span>
                    <p>{{considerations}}</p>
                    <!-- <p>Rating:{{rating}}</p> -->
-                   <a class="button" v-bind:href="productLink" target="_blank">Take a Look</a>
-              </div>
+                   <!-- <a class="button" v-bind:href="productLink" target="_blank">Take a Look</a> -->
+              </a>
 </template>
 
 <script>
@@ -48,14 +48,20 @@ export default {
      margin: 20px;
      padding: 30px;
      width: 30%;
-     height: 55vh;
-     border-radius: 5px;
-     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-     border: 1px solid rgba(0, 0, 0, 0.2);
+     height: 50vh!important;
+     border: 0.75px solid rgba(0, 0, 0, 0.1);;
      background: #FFAFBD;
      background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
      background: linear-gradient(to right, #ffc3a0, #FFAFBD);
      border: 0px; color: white;
+     box-shadow: 0 3px 30px rgba(0,0,0,.05);
+     transition: all 250ms cubic-bezier(.02,.01,.47,1);
+}
+
+#ad-card:hover {
+     box-shadow: 0 10px 30px 5px #dde0ea;
+     transform: translate(0,-5px);
+     transition-delay: 0s!important;
 }
 
 .button {

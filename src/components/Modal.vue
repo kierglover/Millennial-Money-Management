@@ -55,10 +55,7 @@
 
           <div class="modal-footer">
             <slot name="footer">
-              default footer
-              <button class="modal-default-button" @click="$emit('close')">
-                Go back
-              </button>
+              <button class="modal-default-button" @click="$emit('close')">Go back</button>
             </slot>
           </div>
         </div>
@@ -86,9 +83,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// VARIABLES //
+$millennial-blue: #4C84FF;
+
 .modal-mask {
   position: fixed;
-  z-index: 9998;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
@@ -111,6 +111,7 @@ export default {
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
+  text-align: left;
 }
 
 .modal-header {
@@ -128,6 +129,13 @@ export default {
 
 .modal-default-button {
   float: right;
+  background: $millennial-blue;
+  border: none;
+  -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  // margin: 10px 0px 0px 10px;
 }
 
 /* TRANSITION */

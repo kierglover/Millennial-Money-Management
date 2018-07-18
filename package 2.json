@@ -22,7 +22,6 @@
     "envify": "^3.4.1",
     "http-server": "^0.9.0",
     "node-sass": "^4.9.0",
-    "npm": "^6.2.0",
     "npm-run-all": "^2.1.2",
     "uglify-js": "^2.5.0",
     "vueify": "^9.1.0",

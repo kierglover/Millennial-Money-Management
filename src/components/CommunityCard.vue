@@ -1,43 +1,36 @@
 <template lang="html">
-              <div id="ad-card">
-                   <p style="font-size: 2em;">🙌</p>
-                   <!-- <h3>{{name}}</h3> -->
-                   <p style="font-size: 1em;">Be seen!</p>
-                   <p id="ad-subtitle">Push your company to our niche audience of fintech users!</p>
-                   <!-- <p>{{summary}}</p>
-                    <span id="ad-subtitle">Cost</span>
-                   <p>{{cost}}</p>
-                   <span id="ad-subtitle">What you get</span>
-                   <p>{{considerations}}</p> -->
-                   <!-- <p>Rating:{{rating}}</p> -->
-                   <a class="button" @click="showModal = true">Get Started</a>
-                   <payment-modal v-if="showModal" @close="showModal = false">
-                       <!--
-                         you can use custom content here to overwrite
-                         default content
-                       -->
-                       <!-- <h3 slot="header">custom header</h3> -->
-                  </payment-modal>
-              </div>
+
+     <div id="community-card">
+          <p style="font-size: 2em;">🙌</p>
+          <!-- <h3>{{name}}</h3> -->
+          <p style="font-size: 1em;">Be seen!</p>
+          <p id="community-subtitle">Push your company to our niche audience of fintech users!</p>
+          <!-- <p>{{summary}}</p>
+           <span id="ad-subtitle">Cost</span>
+          <p>{{cost}}</p>
+          <span id="ad-subtitle">What you get</span>
+          <p>{{considerations}}</p> -->
+          <!-- <p>Rating:{{rating}}</p> -->
+          <a class="button" @click="showModal = true">Get Started</a>
+          <payment-modal v-if="showModal" @close="showModal = false">
+              <!--
+                you can use custom content here to overwrite
+                default content
+              -->
+              <!-- <h3 slot="header">custom header</h3> -->
+         </payment-modal>
+     </div>
+
 </template>
 
 <script>
-import Modal from './Modal.vue'
 export default {
-     name: 'AdCard',
-     components: {
-          'payment-modal': Modal,
-    },
-     props: ['category', 'name', 'summary', 'cost', 'considerations', 'rating', 'productLink'],
-     data() {
-        return {
-             showModal: false
-        }
-   }
+     name: 'CommunityCard'
 }
 </script>
 
 <style lang="scss" scoped>
+
 /* VARIABLES */
 $millennial-blue: #4C84FF;
 /* SCSS */
@@ -48,14 +41,14 @@ $millennial-blue: #4C84FF;
 }
 
 /* CARD STYLES */
-#ad-subtitle {
+#community-subtitle {
      font-size: 0.85em;
      opacity: 0.5;
      padding: 0px;
      width: 75%
 }
 
-#ad-card {
+#community-card {
      margin: 20px;
      padding: 30px;
      height: 50vh!important;
