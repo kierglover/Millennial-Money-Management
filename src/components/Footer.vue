@@ -26,7 +26,7 @@
                     </form>
                </section>
                <section class="bottom-footer">
-                    <p>&copy <a href="http://millennialmoneymanagement.xyz">millennialmoneymanagement.xyz</a> All rights reserved. millennialmoneymanagement.xyz is a directory, these aren't our services</p>
+                    <p>Open startup bootstrapped by <a href="https://kieranglover.xyz/">Kieran Glover</a> | <a href="https://www.producthunt.com/posts/millennial-money-management">Live on Product Hunt 😻</a></p>
                </section>
      </footer>
 </template>

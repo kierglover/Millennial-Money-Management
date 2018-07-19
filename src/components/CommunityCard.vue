@@ -1,13 +1,8 @@
 <template lang="html">
 
      <div class="community-card">
-          <div class="community-card__img">
-               <img src="http://via.placeholder.com/450x175"></a>
-          </div>
-          <div class="community-card__copy">
-               <p style="font-size: 1em;">Our new millennial money community is open for new members!</p>
-               <p id="community-subtitle">Get access to a diverse group of early adopters, investment enthusiasts and  </p>
-          </div>
+               <p style="font-size: 1em;">✨ Our new millennial money community is open for new members! ✨</p>
+               <p id="community-subtitle">Get access to a diverse group of early adopters, investment enthusiasts <br> and people looking to get the most from their hard earned cash! </p>
           <a class="button">Sign up here</a>
      </div>
 
@@ -39,27 +34,22 @@ $millennial-blue: #4C84FF;
      font-size: 0.85em;
      opacity: 0.5;
      padding: 0px;
-     width: 75%
+     width: 75%;
 }
 
 .community-card {
      margin: 25px;
-     padding: 30px;
+     padding: 30px 50px 30px 50px;
      height: 20vh!important;
      width: 100%!important;
      display: flex;
      border: 0.75px solid rgba(0, 0, 0, 0.1);
-     flex-direction: row;
+     flex-direction: column;
      align-items:center;
      justify-content: center;
      transition: all 250ms cubic-bezier(.02,.01,.47,1);
      background-color: white;
-     &__img {
-          @include card-item-spacing;
-     }
-     &__copy {
-          @include card-item-spacing;
-     }
+     text-align: center;
 }
 
 </style>

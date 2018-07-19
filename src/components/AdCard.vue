@@ -10,7 +10,7 @@
                    <span id="ad-subtitle">What you get</span>
                    <p>{{considerations}}</p> -->
                    <!-- <p>Rating:{{rating}}</p> -->
-                   <a class="button" @click="showModal = true">Get Started</a>
+                   <a class="button" @click="showModal = true">Get Started for $10 p/m</a>
                    <payment-modal v-if="showModal" @close="showModal = false">
                        <!--
                          you can use custom content here to overwrite
@@ -58,7 +58,7 @@ $millennial-blue: #4C84FF;
 #ad-card {
      margin: 20px;
      padding: 30px;
-     height: 50vh!important;
+     height: 45vh!important;
      width: 30%!important;
      display: flex;
      flex: 0 0 auto;

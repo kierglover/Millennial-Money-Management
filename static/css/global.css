@@ -72,3 +72,28 @@ width: 100%;
      box-shadow: rgba(70, 70, 110, 0.109804) 0px 4px 6px 0px;
      background-color: rgb(85, 90, 191);
 }
+
+/* CAROUSEL */
+.carousel-control-next {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: right;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: right;
+/* width: 15%; */
+opacity: .5;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    display: inline-block;
+    /* width: 20px;
+    height: 20px; */
+}

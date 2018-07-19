@@ -6,7 +6,7 @@
                    <p>{{summary}}</p>
                     <span id="ad-subtitle">Cost</span>
                    <p>{{cost}}</p>
-                   <span id="ad-subtitle">What you get</span>
+                   <span id="ad-subtitle">Considerations</span>
                    <p>{{considerations}}</p>
                    <!-- <p>Rating:{{rating}}</p> -->
                    <!-- <a class="button" v-bind:href="productLink" target="_blank">Take a Look</a> -->
@@ -48,7 +48,7 @@ export default {
      margin: 20px;
      padding: 30px;
      width: 30%;
-     height: 50vh!important;
+     height: 45vh!important;
      border: 0.75px solid rgba(0, 0, 0, 0.1);;
      background: #FFAFBD;
      background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);

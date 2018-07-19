@@ -1,11 +1,9 @@
 <template lang="html">
-
      <header id="header">
           <div class="inner">
-               <a href="index.html" class="logo">💰 millennialmoneymaangement.xyz</a>
+               <a href="index.html" class="logo">💰 millennialmoneymangement.xyz</a>
           </div>
      </header>
-
 </template>
 
 <script>

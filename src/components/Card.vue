@@ -1,6 +1,6 @@
 <template lang="html">
           <a id="product-cards" v-bind:href="productLink" target="_blank">
-                   <p>{{category}}</p>
+                   <p style="color: #8E939F;">{{category}}</p>
                    <h3>{{name}}</h3>
                    <span class="card-subtitle">Summary</span>
                    <p>{{summary}}</p>
@@ -42,7 +42,7 @@ export default {
      margin: 20px;
      padding: 30px;
      width: 30%;
-     height: 50vh;
+     height: 45vh;
      box-shadow: 0 3px 30px rgba(0,0,0,.05);
      border: 0.75px solid rgba(0, 0, 0, 0.1);
      color: #28314A;
