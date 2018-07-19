@@ -5,6 +5,11 @@
       <section  class="heading-text">
           <h1>Websites and apps to better manage money</h1>
           <p style="color: #8E939F; width: 40%;">A directory of websites and apps to help you better manage money - without the banks!</p>
+          <div class="capture-wrapper">
+               <input type="text" class="heading-capure" placeholder="Your name"></input>
+               <input type="text" class="heading-capure" placeholder="Your email"></input>
+               <a class="button">Sign up here</a>
+          </div>
       </section>
 
       <div class="content-wrapper">
@@ -24,7 +29,9 @@
            <product-card category="🤖 Auto Saving / Investment" name="Money Box" summary="Automated investment platform" cost="£1 p/month 0.45% of investment per year" considerations="UK only" rating="number from API here" productLink="https://www.moneyboxapp.com"></product-card>
            <product-card category="🤖 Auto Saving / Investment" name="Digit" summary="Automated savings bot/platform" cost="Monthly fee" considerations="US only" rating="number from API here" productLink="https://itunes.apple.com/us/app/digit-save-money-without-thinking/id1011935076?mt=8&ref=producthunt"></product-card>
       </div>
-
+      <div class="container">
+           <community-card></community-card>
+      </div>
       <!-- TRADING -->
       <div class="container">
            <product-card category="📈 Trading" name="Robinhood" summary="Free stock trading platform" cost="Free" considerations="US only" rating="number from API here" productLink="https://robinhood.com"></product-card>
@@ -70,6 +77,7 @@ name: 'app',
        'app-header': Header,
        'product-card': Card,
        'gradient-card': GradientCard,
+       'community-card': CommunityCard,
        'ad-card': AdCard,
        'app-footer': Footer,
  },
@@ -167,6 +175,13 @@ name: 'app',
      display: flex;
      flex-direction: column;
      justify-content: center;
+}
+
+.capture-wrapper {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
 }
 
 </style>

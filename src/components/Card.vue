@@ -44,7 +44,7 @@ export default {
      width: 30%;
      height: 50vh;
      box-shadow: 0 3px 30px rgba(0,0,0,.05);
-     border: 0.75px solid rgba(0, 0, 0, 0.1);;
+     border: 0.75px solid rgba(0, 0, 0, 0.1);
      color: #28314A;
      transition: all 250ms cubic-bezier(.02,.01,.47,1);
 }
