@@ -22,7 +22,7 @@
      </div>
      <div class="container" id="sponsored-content">
            <gradient-card category="💸 Cryptocurreny" name="Crumbs" summary="Automated crypto investment platform" cost="$2.00 p/m and 1% +$0.15 deposit and withdrawel fee" considerations="US only" rating="number from API here" productLink="https://crumbsapp.io" id="meridian-gradient"></gradient-card>
-           <product-card category="👍 Other " name="Moniesto" summary="The new piggy bank for grownups" cost="$4.99 one-off fee" considerations="Still early stages" rating="number from API here" productLink="https://guivr.github.io/moniesto/"></product-card>
+           <product-card category="💰 Budgeting " name="Moniesto" summary="The new piggy bank for grownups" cost="$4.99 one-off fee" considerations="Still early stages" rating="number from API here" productLink="https://guivr.github.io/moniesto/"></product-card>
      </div>
      <div class="container">
           <community-card></community-card>

@@ -1,9 +1,9 @@
 <template lang="html">
 
      <div class="community-card">
-               <p style="font-size: 1em;">✨ Our new millennial money community is open for new members! ✨</p>
-               <p id="community-subtitle">Get access to a diverse group of early adopters, investment enthusiasts <br> and people looking to get the most from their hard earned cash! </p>
-          <a class="button">Sign up here</a>
+               <p style="font-size: 1em;">✨ Got something to share? ✨</p>
+               <p id="community-subtitle">Use our form to send feedback, apps or just say hi 👋 <br> You can also check out the <a href="#footer">public roadmap</a> and add feature requests there 💪</p>
+          <a class="button" href="#footer">Send a message</a>
      </div>
 
 </template>
@@ -51,5 +51,6 @@ $millennial-blue: #4C84FF;
      background-color: white;
      text-align: center;
 }
+
 
 </style>
