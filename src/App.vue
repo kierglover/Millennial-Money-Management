@@ -61,7 +61,7 @@
       </div>
       <!-- BUDGETING -->
       <div class="container">
-          <product-card category="💰 Budgeting " name="Budget.Cool" summary="With a manual-only entry mode, create customizable budgets and build better money management habits." cost="Free & paid plan coming soon" considerations="Still in early stages, but public Roadmap ✅" rating="number from API here" productLink="https://tipyourself.com"></product-card>
+          <product-card category="💰 Budgeting " name="Budget.Cool" summary="With a manual-only entry mode, create customizable budgets and build better money management habits." cost="Free & paid plan coming soon" considerations="Still in early stages, but public Roadmap ✅" rating="number from API here" productLink="https://budget.cool/"></product-card>
           <product-card category="💰 Budgeting " name="Tip Yourself" summary="Fun app to help you save money" cost="Free" considerations="UK only" rating="number from API here" productLink="https://tipyourself.com"></product-card>
       </div>
       </div>
