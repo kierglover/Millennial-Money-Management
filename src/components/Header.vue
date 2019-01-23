@@ -4,14 +4,31 @@
                <a href="index.html" class="logo">💰 Millennial Money Mangement</a>
                <div class="links-wrapper">
                     <a href="https://trello.com/invite/b/GiMkdQBg/b643e249f59e304464cdb6f5f6676ca5/%F0%9F%92%B0-millennial-money-management-roadmap" class="inner__link" target="_blank">🗺 Public Roadmap</a>
-                    <a href="" class="inner__link" target="_blank">🙌 Get Featured</a>
+                    <a class="inner__link" @click="showModal = true">🙌 Get Featured</a>
+                    <payment-modal v-if="showModal" @close="showModal = false">
+                       <!--
+                         you can use custom content here to overwrite
+                         default content
+                       -->
+                       <!-- <h3 slot="header">custom header</h3> -->
+                  </payment-modal>
                </div>
           </div>
      </header>
 </template>
 
 <script>
+import Modal from './Modal.vue'
 export default {
+     name: 'Header',
+     components: {
+          'payment-modal': Modal
+     },
+     data () {
+          return {
+               showModal: false
+          }
+     }
 }
 </script>
 
@@ -31,6 +48,7 @@ header {
           margin: 0 0 0 3em;
           color: #8E939F;
           font-size: 0.8em;
+          cursor: pointer;
      }
 }
 
