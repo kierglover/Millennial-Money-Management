@@ -14,6 +14,7 @@
 
       <div class="content-wrapper">
      <!-- SPONSORED -->
+     <h3 style="padding-left: 20px; color: rgb(142, 147, 159); opacity: 0.3;">Sponsored</h3>
      <div class="container" id="sponsored-content">
           <gradient-card category="🏦 Banking" name="Starling Bank" summary="Current & savings accounts, international bank transfer + marketplace for other applications all in the form of a mobile only bank" cost="Free (dependant on use)" considerations="UK only" rating="API data" productLink="https://www.starlingbank.com/" id="purple-gradeint"></gradient-card>
           <ad-card category="Get Seen" name="Get Featured!" summary="Push your company to our niche audience of fintech users!" cost="$9.99/mo" considerations="Front page gradient card"></ad-card>
@@ -58,9 +59,10 @@
            <product-card category="🏡 Real Estate" name="Property Partner" summary="Crowdfunding UK property investment" cost="2% of initial investment 10.5% of ongoing income + VAT" considerations="UK only" rating="number from API here" productLink="https://www.propertypartner.co"></product-card>
            <product-card category="🏡 Real Estate" name="Fundrise" summary="US property crowdfunding" cost="0%-2% of initial investment 1% annual fees" considerations="US only" rating="number from API here" productLink="https://fundrise.com"></product-card>
       </div>
-      <!-- OTHER -->
+      <!-- BUDGETING -->
       <div class="container">
-           <product-card category="👍 Other " name="Tip Yourself" summary="Fun app to help you save money" cost="Free" considerations="UK only" rating="number from API here" productLink="https://tipyourself.com"></product-card>
+          <product-card category="💰 Budgeting " name="Budget.Cool" summary="With a manual-only entry mode, create customizable budgets and build better money management habits." cost="Free & paid plan coming soon" considerations="Still in early stages, but public Roadmap ✅" rating="number from API here" productLink="https://tipyourself.com"></product-card>
+          <product-card category="💰 Budgeting " name="Tip Yourself" summary="Fun app to help you save money" cost="Free" considerations="UK only" rating="number from API here" productLink="https://tipyourself.com"></product-card>
       </div>
       </div>
       <!-- FOOTER -->
