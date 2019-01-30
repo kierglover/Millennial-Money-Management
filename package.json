@@ -25,6 +25,7 @@
     "npm": "^6.2.0",
     "npm-run-all": "^2.1.2",
     "uglify-js": "^2.5.0",
+    "vue-router": "^3.0.2",
     "vueify": "^9.1.0",
     "watchify": "^3.4.0"
   },
