@@ -15,7 +15,7 @@
 
       <div class="content-wrapper">
      <!-- SPONSORED -->
-     <h3 style="padding-left: 20px; color: rgb(142, 147, 159); opacity: 0.3;">Sponsored</h3>
+     <h3 style="padding-left: 20px; color: rgb(142, 147, 159); opacity: 0.3;">Featured</h3>
      <div class="container" id="sponsored-content">
           <gradient-card category="🏦 Banking" name="Starling Bank" summary="Current & savings accounts, international bank transfer + marketplace for other applications all in the form of a mobile only bank" cost="Free (dependant on use)" considerations="UK only" rating="API data" productLink="https://www.starlingbank.com/" id="purple-gradeint"></gradient-card>
           <ad-card category="Get Seen" name="Get Featured!" summary="Push your company to our niche audience of fintech users!" cost="$9.99/mo" considerations="Front page gradient card"></ad-card>
@@ -173,23 +173,6 @@ name: 'home',
      &::-webkit-scrollbar {
        display: none;
      }
-}
-
-.heading-text {
-     padding: 0px 30px 50px 30px;
-     text-align: left;
-     margin: 20px;
-     height: 40vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-}
-
-.capture-wrapper {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: flex-start;
 }
 
 </style>

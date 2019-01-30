@@ -1,3 +1,20 @@
+.heading-text {
+     padding: 0px 30px 50px 30px;
+     text-align: left;
+     margin: 20px;
+     height: 40vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.capture-wrapper {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+}
+
 /* forms */
 .heading-capure {
      border: 1px solid #E7EBF2!important;
