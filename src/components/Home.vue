@@ -5,7 +5,7 @@
        <!-- HEADING SECTION -->
       <section  class="heading-text">
           <h1>Websites and apps to better manage money</h1>
-          <p style="color: #8E939F; width: 40%;">A directory of websites and apps to help you better manage money - without the banks!</p>
+          <p style="color: #8E939F; width: 40%;">Millennial Monet Management is a directory of websites and apps curated to help you compare and choose the best option for better money management.</p>
           <div class="capture-wrapper">
                <input type="text" class="heading-capure" placeholder="Your name"></input>
                <input type="text" class="heading-capure" placeholder="Your email"></input>
