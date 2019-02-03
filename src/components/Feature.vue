@@ -28,18 +28,25 @@
                 <p class="featured-content__text">Ready to get featured? Awesome 🎉 Fill out the interactive form below to see exactly how your card will look! I personally check out all submissions to make sure they're a good fit for the directory - making sure you get the most bang for your buck 😉 Your listing goes live as soon as I receive payment. The cost is a <strong>one-time fee of $50</strong> for a permanent listing - less than your daily coffee bill ☕️</p>
                 <br>
                 <a class="button" @click="showModal = true">Get started for only 50$</a>
+                <br>
+                <community-card></community-card>
       </section>
+      <app-footer></app-footer>
     </div>
 </template>
 
 <script>
 import Header from './Header.vue'
 import Modal from './Modal.vue'
+import CommunityCard from './CommunityCard.vue'
+import Footer from './Footer.vue'
 export default {
     name: 'feature',
     components: {
         'app-header': Header,
-        'payment-modal': Modal
+        'payment-modal': Modal,
+        'community-card': CommunityCard,
+        'app-footer': Footer
     },
     data () {
         return {
