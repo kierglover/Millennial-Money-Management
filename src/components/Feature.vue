@@ -9,19 +9,19 @@
                        <!-- <h3 slot="header">custom header</h3> -->
         </payment-modal>
         <section  class="heading-text">
-          <h2>Submit your product to 💰 Millennial Money Management </h2>
+          <h2>Get featured on 💰 Millennial Money Management </h2>
           <p style="color: #8E939F; width: 40%;">Millennial Monet Management is a directory of websites and apps curated to help you compare and choose the best option for better money management. By submitting your tool, you get a permanent spot in the directory.</p>
           <br>
           <div class="capture-wrapper">
-               <a class="button" @click="showModal = true">Submit your product</a>
+               <a class="button" @click="showModal = true">Get started for only $50</a>
           </div>
       </section>
       <section class="featured-content">
                 <img src='https://cdn.blinkloader.com/express/ZyBt7leUptTZrpdL1rlX8T1BO/undraw_group_chat_v059.svg' width="400px" height="auto"/>
                 <h3>Why get featured?</h3>
-                <p class="featured-content__text">Alongside getting your product seen and generating traddic, featuring your project on Millennial Money Management has some cool benefits ✌️</p>
+                <p class="featured-content__text">Alongside getting your product seen and generating traffic, featuring your project on Millennial Money Management has some cool benefits ✌️</p>
                 
-                <p class="featured-content__text">The directory is optimized for SEO and as the directory gains popularity, the website gains higher ranks, and any backlinks from the directory helps your website rank higher too - so it's a win win 🤝 I also plan to add some great features such as ratings, round-up blog posts and more in the near future which will give you extra visibility 😍</p>
+                <p class="featured-content__text">The directory is optimized for SEO and as the directory gains popularity, the website gains higher ranks, and any backlinks from the directory helps your website rank higher too - so it's a win win 🤝 As soon as I receive your payment, your product will also get added to the featured widget on the <router-link to="/blog" style="font-weight: bold;">blog</router-link> posts giving you extra visibility 😍</p>
 
                 <p class="featured-content__text">And unlike other product discovery websites, our awesome community are actively looking for money management tech, so we're far more likely to check out your service or business if it happens to be one of the options they find.</p>
 

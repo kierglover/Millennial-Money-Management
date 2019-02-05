@@ -10,7 +10,7 @@
                    <span id="ad-subtitle">What you get</span>
                    <p>{{considerations}}</p> -->
                    <!-- <p>Rating:{{rating}}</p> -->
-                   <a class="button" @click="showModal = true">Get Started for $10 p/m</a>
+                   <a class="button" @click="showModal = true">Get Started</a>
                    <payment-modal v-if="showModal" @close="showModal = false">
                        <!--
                          you can use custom content here to overwrite
