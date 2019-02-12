@@ -47,22 +47,27 @@ export default {
         return {
             showModal: false,
             items: []
-        };
+        }
     },
     mounted () {
         this.loadItems();
     },
     methods: {
-        loadItems () {
+        loadItems: function(){
             // Init variables
             var self = this
             var app_id = "appa73AVpoZ0fYt3g";
             var app_key = "keyEQZe82p6ltTQFy";
             this.items = []
-        }
-    }
-    
-}
+            axios.get("https://api.airtable.com/v0/"+app_id+"/Menu?view=Grid%20view",
+                            { 
+                                headers: { Authorization: "Bearer"+app_key }}).then(function(response){
+                                self.items = response.data.records}).catch(function(error){
+                                    console.log(error)
+                                })
+                            }
+                }
+            };
 </script>
 
 <style lang="sass" scoped>
