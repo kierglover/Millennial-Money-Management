@@ -10,7 +10,7 @@
         </payment-modal>
         <section  class="heading-text">
           <h2>Get featured on 💰 Millennial Money Management </h2>
-          <p style="color: #8E939F; width: 40%;">Millennial Monet Management is a directory of websites and apps curated to help you compare and choose the best option for better money management. By submitting your tool, you get a permanent spot in the directory.</p>
+          <p style="color: #8E939F; width: 40%;">Millennial Money Management is a directory of websites and apps curated to help you compare and choose the best option for better money management. By submitting your tool, you get a permanent spot in the directory.</p>
           <br>
           <div class="capture-wrapper">
                <a class="button" @click="showModal = true">Get started for only $50</a>
