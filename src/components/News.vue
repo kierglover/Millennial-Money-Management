@@ -59,15 +59,16 @@ export default {
             var app_id = "appa73AVpoZ0fYt3g";
             var app_key = "keyEQZe82p6ltTQFy";
             this.items = []
-            axios.get("https://api.airtable.com/v0/"+app_id+"/Menu?view=Grid%20view",
-                            { 
-                                headers: { Authorization: "Bearer"+app_key }}).then(function(response){
-                                self.items = response.data.records}).catch(function(error){
-                                    console.log(error)
-                                })
-                            }
-                }
-            };
+
+            axios.get("https://api.airtable.com/v0/"+app_id+"/Table%201",{headers: { Authorization: "Bearer "+app_key }}
+                        ).then(function(response){
+                            self.items = response.data.records
+                        }).catch(function(error){
+                            console.log(error)
+                        })
+        }
+    },
+}
 </script>
 
 <style lang="sass" scoped>
