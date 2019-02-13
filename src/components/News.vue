@@ -18,12 +18,17 @@
       </section>
       <section class="news-content">
             <ul>
-                <li v-for="item in items">
-                    <h3>{{ item['fields']['Post title'] }}</h3>
-                    <p>{{ item['fields']['Excerpt'] }}</p>
-                    <p><strong>Author: </strong>${{ item['fields']['Author name'] }}</p>
-                    <!-- <p><strong>Category: </strong>{{ item['fields']['Category'] }}</p> -->
-                    <!-- <img :src="item['fields']['Photo'][0]['thumbnails']['large']['url']" alt="" v-if="item['fields']['Photo']" width="150"> -->
+                <li class="news-content__article" v-for="item in items">
+                    <div class="news-content__article__image-wrapper">
+                        <img style="border-radius: 0.75rem;" :src="item['fields']['Article image'][0]['thumbnails']['large']['url']" alt="" v-if="item['fields']['Article image']" width="800">
+                    </div>
+                    <div class="news-content__article__text-wrapper">
+                        <h3>{{ item['fields']['Post title'] }}</h3>
+                        <p>{{ item['fields']['Excerpt'] }}</p>
+                        <a class="button" :href="item['fields']['Post URL']" target="_blank">Read More</a>
+                        <!-- <p><strong>Author: </strong>${{ item['fields']['Author name'] }}</p> -->
+                        <!-- <p><strong>Category: </strong>{{ item['fields']['Category'] }}</p> -->
+                    </div>
                 </li>
             </ul>  
       </section>
@@ -76,8 +81,24 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10rem 25rem 10rem 25rem;
+    padding: 5rem 15rem 5rem 15rem;
     background: #F5F6FA;
+    &__article {
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+        margin: 1em 0em 1em 0em;
+        background-color: white;
+        list-style: none;
+        &__image-wrapper {
+            display: flex;
+            align-items: center;
+            margin: 0em 1.5em 0em 0em;
+        }
+        &__text-wrapper {
+            margin: 0em 0em 0em 1.5em;
+        }
+    }
 }
 </style>
 
