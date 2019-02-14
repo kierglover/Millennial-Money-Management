@@ -9,7 +9,7 @@
                        <!-- <h3 slot="header">custom header</h3> -->
         </payment-modal>
         <section  class="heading-text">
-          <h2>Stay up to the minute with the latest 💻 fintech news</h2>
+          <h2>The best 💻 fintech news from around the web</h2>
           <p style="color: #8E939F; width: 40%;">The 💰 Millennial Money Management news is a carefully curated selection of fintech news to make better money management decisions. </p>
           <br>
           <!-- <div class="capture-wrapper">
