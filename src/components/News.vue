@@ -16,6 +16,10 @@
                <a class="button" @click="showModal = true">Get started for only $50</a>
           </div> -->
       </section>
+      <div v-if="loading">
+          <img src="../static/spinner.gif"/>
+          Loading...
+      </div>
       <section class="news-content">
             <ul>
                 <li class="news-content__article" v-for="item in items">
@@ -51,7 +55,8 @@ export default {
     data () {
         return {
             showModal: false,
-            items: []
+            items: [],
+            loading: false
         }
     },
     mounted () {
@@ -60,16 +65,19 @@ export default {
     methods: {
         loadItems: function(){
             // Init variables
-            var self = this
+            var self = this;
+            // this.loading = true;
             var app_id = "appa73AVpoZ0fYt3g";
             var app_key = "keyEQZe82p6ltTQFy";
             this.items = []
 
             axios.get("https://api.airtable.com/v0/"+app_id+"/Table%201",{headers: { Authorization: "Bearer "+app_key }}
                         ).then(function(response){
-                            self.items = response.data.records
+                            // this.loading = false;
+                            self.items = response.data.records;
                         }).catch(function(error){
-                            console.log(error)
+                            console.log(error);
+                            // this.loading = false;
                         })
         }
     },
