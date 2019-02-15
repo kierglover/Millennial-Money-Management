@@ -17,6 +17,7 @@
           </div>
       </section>
       <section class="news-content">
+          <!-- LOADER -->
                 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;" v-if="loading">
                     <img src="../static/spinner.gif"/>
                     <p>Loading news...</p>
