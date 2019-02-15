@@ -12,15 +12,15 @@
           <h2>The best 💻 fintech news from around the web</h2>
           <p style="color: #8E939F; width: 40%;">The 💰 Millennial Money Management news is a carefully curated selection of fintech news to make better money management decisions. </p>
           <br>
-          <!-- <div class="capture-wrapper">
+          <div class="capture-wrapper">
                <a class="button" @click="showModal = true">Get started for only $50</a>
-          </div> -->
+          </div>
       </section>
-      <div v-if="loading">
-          <img src="../static/spinner.gif"/>
-          Loading...
-      </div>
       <section class="news-content">
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;" v-if="loading">
+                    <img src="../static/spinner.gif"/>
+                    <p>Loading news...</p>
+                </div>
             <ul>
                 <li class="news-content__article" v-for="item in items">
                     <div class="news-content__article__image-wrapper">
@@ -66,18 +66,18 @@ export default {
         loadItems: function(){
             // Init variables
             var self = this;
-            // this.loading = true;
             var app_id = "appa73AVpoZ0fYt3g";
             var app_key = "keyEQZe82p6ltTQFy";
+            this.loading = true;
             this.items = []
 
             axios.get("https://api.airtable.com/v0/"+app_id+"/Table%201",{headers: { Authorization: "Bearer "+app_key }}
                         ).then(function(response){
-                            // this.loading = false;
+                            self.loading = false;
                             self.items = response.data.records;
                         }).catch(function(error){
                             console.log(error);
-                            // this.loading = false;
+                            self.loading = false;
                         })
         }
     },

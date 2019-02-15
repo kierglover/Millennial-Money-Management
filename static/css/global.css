@@ -71,6 +71,7 @@ width: 100%;
 /* BUTTONS */
 
 .button {
+     margin: 2rem 0rem 0rem 0rem;
      font-size: 0.85em;
      background: #4C84FF;
      border: none;
@@ -78,6 +79,22 @@ width: 100%;
      box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
      -webkit-transition: all .15s ease;
      transition: all .15s ease;
+}
+.button--secondary {
+     box-sizing: border-box;
+     color: #4C84FF;
+     display: inline-block;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     white-space: nowrap;
+     background-color: none;
+     font-size: 0.85em;
+     margin: 2rem 0rem 0rem 2rem;
+     background: none;
+     border: 1px solid;
+     border-color: #4C84FF;
+
 }
 .button:hover {
      transform: matrix(1, 0, 0, 1, 0, -1);

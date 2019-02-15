@@ -7,9 +7,8 @@
           <h1>Websites and apps to better manage money</h1>
           <p style="color: #8E939F; width: 40%;">Millennial Monet Management is a directory of websites and apps curated to help you compare and choose the best option for better money management.</p>
           <div class="capture-wrapper">
-               <input type="text" class="heading-capure" placeholder="Your name"></input>
-               <input type="text" class="heading-capure" placeholder="Your email"></input>
-               <a class="button">Get updates to your inbox</a>
+               <router-link class="button" to="/featured">Get featured</router-link>
+               <a class="button--secondary" href="#footer">Send a submission</a>
           </div>
       </section>
 
