@@ -28,6 +28,7 @@
                         <img style="border-radius: 0.75rem;" :src="item['fields']['Article image'][0]['thumbnails']['large']['url']" alt="" v-if="item['fields']['Article image']" width="800">
                     </div>
                     <div class="news-content__article__text-wrapper">
+                        <!-- <p class="news-content__date">{{item['fields']['Date published'] }}</p> -->
                         <h3>{{ item['fields']['Post title'] }}</h3>
                         <p>{{ item['fields']['Excerpt'] }}</p>
                         <a class="button" :href="item['fields']['Post URL']" target="_blank">Read More</a>
@@ -107,6 +108,11 @@ export default {
         &__text-wrapper {
             margin: 0em 0em 0em 1.5em;
         }
+    }
+    &__date {
+        margin: 0em 0em 1em 0em;
+        font-size: 0.8em;
+        color: grey;
     }
 }
 </style>

@@ -1,7 +1,7 @@
 <template lang="html">
      <footer id="footer">
                <section class="inner">
-                    <h1>Suggest a Tool</h1>
+                    <h1>Get in touch</h1>
                     <p>Know anything that should be here? Go ahead and subimit it below 🚀</p>
                     <form action="https://formspree.io/kier.p.glover@gmail.com" method="POST">
                           <div class="field-wrapper">
@@ -11,10 +11,10 @@
                              <input type="email" name="_replyto" id="email" placeholder="Your email">
                           </div>
                           <div class="field-wrapper">
-                              <input type="text" name="URL" id="URL" placeholder="URL of tool (required)">
+                              <input type="text" name="URL" id="URL" placeholder="URL of tool or article (required)">
                           </div>
                           <div class="field-wrapper">
-                              <input type="text" name="Category" id="category" placeholder="Category">
+                              <input type="text" name="Category" id="category" placeholder="Category (if applicable)">
                           </div>
                          <div class="textarea-wrapper">
                               <textarea name="comments" id="comments" placeholder="Comments" rows="1" style="overflow: hidden; resize: none; height: 59px;"></textarea>
@@ -45,6 +45,22 @@ $millennial-blue: #4C84FF;
      width: 500px;
      height: 8vh;
      margin-bottom: 10px;
+}
+
+input {
+     padding: 0.5em;
+}
+
+textarea {
+     padding: 0.5em;
+}
+
+textarea:focus {
+     border-color: $millennial-blue;
+}
+
+input:focus {
+     border-color: $millennial-blue;
 }
 
 #footer {
