@@ -3,12 +3,17 @@
   <div class="home">
        <app-header></app-header>
        <!-- HEADING SECTION -->
-      <section  class="heading-text">
-          <h1>Websites and apps to better manage money</h1>
-          <p style="color: #8E939F; width: 40%;">Millennial Monet Management is a directory of websites and apps curated to help you compare and choose the best option for better money management.</p>
-          <div class="capture-wrapper">
-               <router-link class="button" to="/featured">Get featured</router-link>
-               <a class="button--secondary" href="#footer">Send a submission</a>
+      <section  class="hero-section">
+          <div class="hero-content">
+               <h1>Websites and apps to better manage money</h1>
+               <p style="color: #8E939F;">Millennial Monet Management is a directory of websites and apps curated to help you compare and choose the best option for better money management.</p>
+               <div class="capture-wrapper">
+                    <router-link class="button" to="/featured">Get featured</router-link>
+                    <a class="button--secondary" href="#footer">Send a submission</a>
+               </div>
+          </div>
+          <div class="hero-image-wrap">
+               <img src='https://cdn.blinkloader.com/express/dXYp5BQYOFH5lVzMZZk6bsRmY/undraw_savings_hjfl.svg' />
           </div>
       </section>
 
@@ -121,6 +126,12 @@ name: 'home',
      cursor: pointer;
 }
 
+@mixin hero-image-styling {
+     max-width: 65%;
+     max-height: 100%;
+     height: auto;
+}
+
 #orange-gradient {
      @include card-styles;
      background: #FF8008;  /* fallback for old browsers */
@@ -156,6 +167,10 @@ name: 'home',
 
 #meridian-gradient:hover {
      @include card-hover;
+}
+
+.hero-image-wrap {
+     @include hero-image-styling;
 }
 
 .content-wrapper {
