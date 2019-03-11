@@ -82,6 +82,9 @@ input:focus {
      display: flex;
      flex-direction: row;
      align-items: center;
+     &__text {
+          margin: 0 5em 0 0;
+     }
      &__image-wrap {
           @include footer-image-styling;
      }
