@@ -8,14 +8,16 @@
                        -->
                        <!-- <h3 slot="header">custom header</h3> -->
         </payment-modal>
-        <section  class="heading-text">
-          <h2>Get featured on 💰 Millennial Money Management </h2>
-          <p style="color: #8E939F; width: 40%;">Millennial Money Management is a directory of websites and apps curated to help you compare and choose the best option for better money management. By submitting your tool, you get a permanent spot in the directory.</p>
-          <br>
-          <div class="capture-wrapper">
-               <a class="button" @click="showModal = true">Get started for only $50</a>
-          </div>
-      </section>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Get featured on <br> 💰 Millennial Money Management </h1>
+                <p style="color: #8E939F; width: 40%;">Millennial Money Management is a directory of websites and apps curated to help you compare and choose the best option for better money management. By submitting your tool, you get a permanent spot in the directory.</p>
+                <br>
+                <div class="capture-wrapper">
+                    <a class="button" @click="showModal = true">Get started for only $50</a>
+                </div>
+            </div>
+        </section>
       <section class="featured-content">
                 <img src='https://cdn.blinkloader.com/express/ZyBt7leUptTZrpdL1rlX8T1BO/undraw_group_chat_v059.svg' width="400px" height="auto"/>
                 <h3>Why get featured?</h3>

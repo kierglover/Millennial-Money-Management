@@ -39,7 +39,21 @@ textarea {
      font-size: 1em;
 }
 
-.special:hover {
+input.special {
+     margin: 2rem 0rem 0rem 0rem;
+     border-radius: 0%;
+     padding: 10px 20px!important;
+     font-size: 0.85em;
+     background: #4C84FF;
+     color: white;
+     border: none;
+     -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+     box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+     -webkit-transition: all .15s ease;
+     transition: all .15s ease;
+}
+
+input.special:hover {
      transform: matrix(1, 0, 0, 1, 0, -1);
      transition-delay: 0s;
      transition-duration: 0.15s;
@@ -134,7 +148,7 @@ opacity: .5;
 .footer {
      background-color: #fff;
      margin: 2em;
-     padding: 5em;
+     padding: 5em 5em 0em 5em;
      display: flex;
      flex-direction: column;
      align-items: center;

@@ -56,7 +56,7 @@ $millennial-blue: #4C84FF;
 }
 
 @mixin footer-image-styling {
-     max-width: 65%;
+     max-width: 100%;
      max-height: 100%;
      height: auto;
 }
@@ -97,15 +97,6 @@ input:focus {
 
 .textarea-wrapper {
      @include input-field-styling;
-}
-.special {
-     margin-top: 50px;
-     text-transform: uppercase;
-     font-size: 1em;
-     width: 50%;
-     background: $millennial-blue;
-     color: white;
-     border: none;
 }
 
 .bottom-footer p {

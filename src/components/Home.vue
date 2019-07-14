@@ -73,6 +73,9 @@
       <!-- FOOTER -->
       <app-footer></app-footer>
 
+      <!-- MakerWidget -->
+      <maker-widget></maker-widget>
+
   </div>
 </template>
 
@@ -83,6 +86,7 @@ import GradientCard from './GradientCard.vue'
 import AdCard from './AdCard.vue'
 import CommunityCard from './CommunityCard.vue'
 import Footer from './Footer.vue'
+import MakerWidget from './MakerWidget.vue'
 export default {
 name: 'home',
   components: {
@@ -92,6 +96,7 @@ name: 'home',
        'community-card': CommunityCard,
        'ad-card': AdCard,
        'app-footer': Footer,
+       'maker-widget': MakerWidget,
  },
   data () {
     return {
@@ -100,7 +105,7 @@ name: 'home',
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="sass" scoped>
 @import './static/css/sakura.css';
 @import './static/css/global.css';
 

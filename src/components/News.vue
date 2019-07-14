@@ -8,14 +8,16 @@
                        -->
                        <!-- <h3 slot="header">custom header</h3> -->
         </payment-modal>
-        <section  class="heading-text">
-          <h2>The best 💻 fintech news from around the web</h2>
-          <p style="color: #8E939F; width: 40%;">The 💰 Millennial Money Management news is a carefully curated selection of fintech news to make better money management decisions. </p>
-          <br>
-          <div class="capture-wrapper">
-               <a class="button" @click="showModal = true">Get started for only $50</a>
-          </div>
-      </section>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>The best 💻 fintech news from around the web</h2>
+                <p style="color: #8E939F; width: 40%;">The 💰 Millennial Money Management news is a carefully curated selection of fintech news to make better money management decisions. </p>
+                <br>
+                <div class="capture-wrapper">
+                    <a class="button" @click="showModal = true">Get started for only $50</a>
+                </div>
+            </div>
+        </section>
       <section class="news-content">
           <!-- LOADER -->
                 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;" v-if="loading">
