@@ -105,7 +105,7 @@ name: 'home',
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 @import './static/css/sakura.css';
 @import './static/css/global.css';
 
