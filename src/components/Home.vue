@@ -9,7 +9,6 @@
                <p style="color: #8E939F;">Millennial Monet Management is a directory of websites and apps curated to help you compare and choose the best option for better money management.</p>
                <div class="capture-wrapper">
                     <router-link class="button" to="/featured">Get featured</router-link>
-                    <a class="button--secondary" href="#footer">Send a submission</a>
                </div>
           </div>
           <div class="hero-image-wrap">
@@ -47,6 +46,7 @@
       </div>
       <!-- TRADING -->
       <div class="container">
+          <product-card category="📈 Trading" name="ProQuant" summary="Follow, build and run trading robots for Stocks, Forex, Crypto and more" cost="Free" considerations="Limited brokerage connections" rating="number from API here" productLink="https://www.proquant.com/"></product-card>
            <product-card category="📈 Trading" name="Robinhood" summary="Free stock trading platform" cost="Free" considerations="US only" rating="number from API here" productLink="https://robinhood.com"></product-card>
            <!-- SPONSORED CARD -->
           <ad-card category="👉 Sponsored" name="Get Featured!" summary="Get your own app or website featured in a colorful card!" cost="$9.99/mo" considerations="Front page gradient card"></ad-card>

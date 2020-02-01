@@ -10,7 +10,7 @@
         </payment-modal>
         <section class="hero-section">
             <div class="hero-content">
-                <h2>The best 💻 fintech news from around the web</h2>
+                <h1>The best 💻 fintech news from around the web</h1>
                 <p style="color: #8E939F; width: 40%;">The 💰 Millennial Money Management news is a carefully curated selection of fintech news to make better money management decisions. </p>
                 <br>
                 <div class="capture-wrapper">

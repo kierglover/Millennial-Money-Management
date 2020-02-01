@@ -23,7 +23,7 @@
                 <h3>Why get featured?</h3>
                 <p class="featured-content__text">Alongside getting your product seen and generating traffic, featuring your project on Millennial Money Management has some cool benefits ✌️</p>
                 
-                <p class="featured-content__text">The directory is optimized for SEO and as the directory gains popularity, the website gains higher ranks, and any backlinks from the directory helps your website rank higher too - so it's a win win 🤝 As soon as I receive your payment, your product will also get added to the featured widget on the <router-link to="/blog" style="font-weight: bold;">blog</router-link> posts giving you extra visibility 😍</p>
+                <p class="featured-content__text">The directory is optimized for SEO and as the directory gains popularity, the website gains higher ranks, and any backlinks from the directory helps your website rank higher too - so it's a win win 🤝 As soon as I receive your payment, your product will also get added to the featured widget on the <router-link to="/news" style="font-weight: bold;">blog</router-link> posts giving you extra visibility 😍</p>
 
                 <p class="featured-content__text">And unlike other product discovery websites, our awesome community are actively looking for money management tech, so we're far more likely to check out your service or business if it happens to be one of the options they find.</p>
 
