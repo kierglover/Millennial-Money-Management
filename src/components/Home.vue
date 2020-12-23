@@ -95,7 +95,6 @@ name: 'home',
        'community-card': CommunityCard,
        'ad-card': AdCard,
        'app-footer': Footer,
-       'maker-widget': MakerWidget,
  },
   data () {
     return {
