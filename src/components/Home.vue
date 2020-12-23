@@ -86,7 +86,6 @@ import GradientCard from './GradientCard.vue'
 import AdCard from './AdCard.vue'
 import CommunityCard from './CommunityCard.vue'
 import Footer from './Footer.vue'
-import MakerWidget from './MakerWidget.vue'
 export default {
 name: 'home',
   components: {
