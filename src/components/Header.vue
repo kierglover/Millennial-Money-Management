@@ -1,10 +1,9 @@
 <template lang="html">
      <header id="header">
           <div class="inner">
-               <router-link to="/" class="logo">💰 Millennial Money Mangement</router-link>
+               <router-link to="/" class="logo">💰 Millennial Money Management</router-link>
                <div class="links-wrapper">
                     <router-link to="/news" class="inner__link">💻 Fintect News</router-link>
-                    <router-link to="/featured" class="inner__link">🙌 Get Featured</router-link>
                </div>
           </div>
      </header>

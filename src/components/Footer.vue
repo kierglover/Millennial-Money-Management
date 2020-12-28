@@ -31,7 +31,7 @@
                     </div>
                </section>
                <section class="bottom-footer">
-                    <p>Open startup bootstrapped by <a href="https://kieranglover.xyz/">Kieran Glover</a> | <a href="https://www.producthunt.com/posts/millennial-money-management">Live on Product Hunt 😻</a></p>
+                    <p>Powered by <a href="http://mad.design/" style="font-family: Poppins; font-weight: bold; color: #e3211a">Mäd</a> | <a href="https://www.producthunt.com/posts/millennial-money-management">Live on Product Hunt 😻</a></p>
                </section>
      </footer>
 </template>

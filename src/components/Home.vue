@@ -7,9 +7,6 @@
           <div class="hero-content">
                <h1>Websites and apps to better manage money</h1>
                <p style="color: #8E939F;">Millennial Monet Management is a directory of websites and apps curated to help you compare and choose the best option for better money management.</p>
-               <div class="capture-wrapper">
-                    <router-link class="button" to="/featured">Get featured</router-link>
-               </div>
           </div>
           <div class="hero-image-wrap">
                <img src='https://cdn.blinkloader.com/express/dXYp5BQYOFH5lVzMZZk6bsRmY/undraw_savings_hjfl.svg' />
