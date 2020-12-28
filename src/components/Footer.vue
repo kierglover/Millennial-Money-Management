@@ -31,7 +31,7 @@
                     </div>
                </section>
                <section class="bottom-footer">
-                    <p>Powered by <a href="http://mad.design/" style="font-family: Poppins; font-weight: bold; color: #e3211a">Mäd</a> | <a href="https://www.producthunt.com/posts/millennial-money-management">Live on Product Hunt 😻</a></p>
+                    <p>Powered by <a href="http://mad.design/" class="mad-link">Mäd</a> | <a href="https://www.producthunt.com/posts/millennial-money-management">Live on Product Hunt 😻</a></p>
                </section>
      </footer>
 </template>
@@ -44,6 +44,7 @@ export default {
 <style lang="scss" scoped>
 @import './static/css/sakura.css';
 @import './static/css/global.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 /* VARIABLES */
 $millennial-blue: #4C84FF;
@@ -99,9 +100,14 @@ input:focus {
      @include input-field-styling;
 }
 
+.mad-link {
+     font-family: "Poppins", sans-serif;
+     font-weight: bold;
+     color: #e3211a;
+}
+
 .bottom-footer p {
      margin: 25px 0px 25px 0px;
      font-size: 13px;
-     opacity: 0.5;
 }
 </style>
